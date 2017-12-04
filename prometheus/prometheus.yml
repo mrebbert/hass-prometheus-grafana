@@ -1,0 +1,20 @@
+# my global config
+global:
+  scrape_interval:     15s
+  evaluation_interval: 30s
+  # scrape_timeout is set to the global default (10s).
+
+  external_labels:
+    monitor: whatever
+
+rule_files:
+
+scrape_configs:
+- job_name: 'hass'
+  scrape_interval: 60s
+  metrics_path: /api/prometheus
+  params:
+    api_password: ['<YOUR_APIPASSWORD>']
+  scheme: http
+  static_configs:
+    - targets: ['<HOSTNAME_OF_YOUR_HASS_INSTALLATION>:8123']
