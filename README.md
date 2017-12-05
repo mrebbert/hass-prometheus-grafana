@@ -1,7 +1,7 @@
-# HomeAssistant-prometheus-grafana
+# Monitoring HomeAssistant with Prometheus and Grafana
 Little docker-compose setup to combine HomeAssistant with Prometheus and Grafana.
 
-##Prerequisites
+## Prerequisites
 ### Docker 
 Update your docker installation to the newest version and install docker-compose if not already happened.
 
